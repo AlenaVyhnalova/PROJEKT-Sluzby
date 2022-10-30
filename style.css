@@ -16,6 +16,12 @@ main {
     margin-right: auto;
 }
 
+@media screen and (min-width: 640px) {
+ main {
+    max-width: 550px;
+ }
+}
+
 .traveler {
     max-width: 350px;
     margin-top: 60px;
@@ -81,8 +87,21 @@ button {
     margin-bottom: 70px;
 }
 
+@media screen and (min-width: 640px) {
+ .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+ }
+ .button1,
+ .button2 {
+    margin: 0;
+ }
+}
+
 .frame {
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color: #FFFFFF;
     max-width: 460px;
@@ -103,4 +122,34 @@ button {
 
 .rv {
     margin-bottom: 60px;
+}
+
+@media screen and (min-width: 640px) {
+    .frames {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+ }
+
+ .frame {
+    display: block;
+    flex: 1 1 calc(100% / 3);
+    text-align: center;
+ }
+
+ .frame p {
+    padding: 0px 20px 20px 20px;
+ }
+
+.frame img {
+    padding-top: 40px;
+ }
+
+.rv {
+    margin-bottom: 0;
+ }
+
+ .two {
+    margin-bottom: 60px;
+ }
 }
